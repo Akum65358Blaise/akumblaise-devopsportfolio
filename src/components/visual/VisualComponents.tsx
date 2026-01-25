@@ -272,6 +272,7 @@ interface InteractiveButtonProps {
   loading?: boolean;
   icon?: React.ReactNode;
   iconPosition?: 'left' | 'right';
+  type?: 'button' | 'submit' | 'reset';
 }
 
 export const InteractiveButton: React.FC<InteractiveButtonProps> = ({
@@ -282,7 +283,8 @@ export const InteractiveButton: React.FC<InteractiveButtonProps> = ({
   disabled = false,
   loading = false,
   icon,
-  iconPosition = 'left'
+  iconPosition = 'left',
+  type = 'button'
 }) => {
   const baseClasses = 'inline-flex items-center gap-2 font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-black disabled:opacity-50 disabled:cursor-not-allowed';
   
@@ -300,6 +302,7 @@ export const InteractiveButton: React.FC<InteractiveButtonProps> = ({
 
   return (
     <motion.button
+      type={type}
       whileHover={{ scale: disabled ? 1 : 1.05 }}
       whileTap={{ scale: disabled ? 1 : 0.95 }}
       onClick={onClick}
