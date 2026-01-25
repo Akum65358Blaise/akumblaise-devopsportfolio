@@ -64,9 +64,7 @@ export const Contact = () => {
       formDataToSubmit.append("email", formData.email);
       formDataToSubmit.append("subject", formData.subject);
       formDataToSubmit.append("message", formData.message);
-      
-      // Optional: Add your email to receive submissions
-      // formDataToSubmit.append("to", "akumacha@gmail.com");
+      formDataToSubmit.append("to", "akumacha@gmail.com");
 
       // Submit to Web3Forms API
       const response = await fetch("https://api.web3forms.com/submit", {

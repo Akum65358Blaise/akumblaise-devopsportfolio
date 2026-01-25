@@ -8,6 +8,7 @@ import { Projects } from './pages/Projects';
 import Blog from './pages/Blog';
 import CaseStudies from './pages/CaseStudies';
 import { Contact } from './pages/Contact';
+import { Newsletter } from './pages/Newsletter';
 import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/newsletter" element={<Newsletter />} />
           </Routes>
         </main>
         <Footer />
