@@ -4,7 +4,7 @@ Ultra-modern portfolio website for DevOps/Cloud Engineers featuring an advanced 
 
 ## 🌟 Live Demo
 
-**[View Live Website →](https://neeraj-devops.vercel.app)**
+**[View Live Website →](https://akumblaiseacha.com)**
 
 ## ✨ Enhanced Features
 
@@ -61,7 +61,7 @@ Ultra-modern portfolio website for DevOps/Cloud Engineers featuring an advanced 
 
 ```bash
 # Clone the repository
-git clone https://github.com/neerajnakka/devops-portfolio.git
+git clone https://github.com/Akum65358Blaise/akumblaise-devopsportfolio.git
 cd devops-portfolio
 
 # Install dependencies
@@ -103,7 +103,7 @@ The project is configured for seamless deployment on Vercel:
 
 ### **Automatic Deployment**
 - Changes pushed to `main` branch trigger automatic builds
-- Deployment status available at: [Vercel Dashboard](https://vercel.com/neerajnakka/devops-portfolio)
+- Deployment status available at: [Vercel Dashboard](https://vercel.com) or [Netlify Dashboard](https://app.netlify.com)
 - Custom domain support included
 
 ### **Manual Deployment**
@@ -194,9 +194,9 @@ This portfolio showcases DevOps and Cloud Engineering expertise with modern web 
 
 ## 🔗 Links
 
-- **Live Website**: [https://neeraj-devops.vercel.app](https://neeraj-devops.vercel.app)
-- **GitHub Repository**: [https://github.com/neerajnakka/devops-portfolio](https://github.com/neerajnakka/devops-portfolio)
-- **Personal GitHub**: [https://github.com/neerajnakka](https://github.com/neerajnakka)
+- **Live Website**: [https://akumblaiseacha.com](https://akumblaiseacha.com)
+- **GitHub Repository**: [https://github.com/Akum65358Blaise/akumblaise-devopsportfolio](https://github.com/Akum65358Blaise/akumblaise-devopsportfolio)
+- **Personal GitHub**: [https://github.com/Akum65358Blaise](https://github.com/Akum65358Blaise)
 
 ---
 

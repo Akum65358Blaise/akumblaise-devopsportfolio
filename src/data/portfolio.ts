@@ -50,7 +50,7 @@ export const PROJECTS = [
     description: 'Deployed a production-grade Amazon Clone on AWS EKS with full GitOps automation via ArgoCD. Integrated CI/CD pipelines using GitHub Actions, containerized microservices with Docker, and managed configuration using Kustomize for seamless auto-sync deployments.',
     technologies: ['AWS EKS', 'Kubernetes', 'ArgoCD', 'GitHub Actions', 'Kustomize', 'Docker', 'Terraform'],
     category: 'devops',
-    githubLink: 'https://github.com/neerajnakka/amazon-clone-k8s-eks-argoCD',
+    githubLink: 'https://github.com/Akum65358Blaise',
     websiteLink: '',
   },
   {
