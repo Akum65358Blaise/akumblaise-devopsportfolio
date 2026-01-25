@@ -176,10 +176,10 @@ sudo npm install -g pm2
 
 # Create PM2 ecosystem file
 cd /var/www/akumblaise-devopsportfolio
-nano ecosystem.config.js
+nano ecosystem.config.cjs
 ```
 
-Add this content to `ecosystem.config.js`:
+Add this content to `ecosystem.config.cjs`:
 
 ```javascript
 module.exports = {
@@ -205,7 +205,7 @@ Start the application with PM2:
 
 ```bash
 # Start the dev server with PM2
-pm2 start ecosystem.config.js
+pm2 start ecosystem.config.cjs
 
 # Save PM2 configuration to start on server reboot
 pm2 save

@@ -37,7 +37,7 @@ pm2 stop akumblaise-portfolio 2>/dev/null || true
 pm2 delete akumblaise-portfolio 2>/dev/null || true
 
 # Start with PM2
-pm2 start ecosystem.config.js
+pm2 start ecosystem.config.cjs
 pm2 save
 
 echo "✅ Development server started!"
