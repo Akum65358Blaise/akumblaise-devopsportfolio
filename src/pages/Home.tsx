@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ExternalLink, Github, Code2 } from 'lucide-react';
+import { ExternalLink, Github, Code2, Cloud, Users, Rocket, ArrowRight } from 'lucide-react';
 import { Grid3DBackground } from '../components/Grid3D';
 import { Typewriter } from '../components/Typewriter';
 import { HERO_CONTENT, SKILLS, PROJECTS } from '../data/portfolio';
@@ -13,7 +13,41 @@ export const Home = () => {
     { label: 'Cost Reduction', value: '35%' },
   ];
 
-  const featuredSkills = SKILLS.slice(0, 6);
+  // Curated 12 skills for 2 rows of 6
+  const featuredSkillNames = [
+    'AWS', 'GCP', 'Docker', 'Kubernetes', 'Terraform', 'Ansible',
+    'Python', 'Node.js', 'PHP', 'Go', 'Jenkins', 'Linux',
+  ];
+  const featuredSkills = featuredSkillNames
+    .map(name => SKILLS.find(s => s.name === name))
+    .filter(Boolean) as typeof SKILLS;
+
+  const services = [
+    {
+      icon: Cloud,
+      title: 'Infrastructure & Cloud Services',
+      description:
+        'Custom cloud architecture, CI/CD pipelines, containerization, cost optimization, and full infrastructure design — built for scale, reliability, and performance.',
+      href: '/services/infrastructure',
+      gradient: 'from-primary-500 to-green-400',
+    },
+    {
+      icon: Users,
+      title: 'Transition Into DevOps',
+      description:
+        'Personalized guidance for engineers transitioning into DevOps careers — covering skill assessment, learning roadmaps, and practical strategies to break into the industry.',
+      href: '/services/transition-into-devops',
+      gradient: 'from-blue-500 to-cyan-400',
+    },
+    {
+      icon: Rocket,
+      title: 'DevOps Job-Ready Strategies',
+      description:
+        'Practical career strategies focused on essential tools, real-world workflows, portfolio building, interview preparation, and industry-aligned skills to become job-ready faster.',
+      href: '/services/career-accelerator',
+      gradient: 'from-purple-500 to-pink-500',
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-bg-page relative overflow-hidden">
@@ -107,6 +141,61 @@ export const Home = () => {
               </motion.div>
             ))}
           </motion.div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-24 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="font-mono text-3xl md:text-4xl font-bold text-primary-500 mb-4">
+              Services I Offer
+            </h2>
+            <p className="text-neutral-400 max-w-2xl mx-auto">
+              From cloud infrastructure consulting to career coaching — helping teams and engineers reach their full potential
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {services.map((service, index) => {
+              const IconComponent = service.icon;
+              return (
+                <motion.div
+                  key={service.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.15, duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="bg-bg-elevated border border-neutral-700 rounded-xl p-8 hover:border-primary-500/50 transition-all duration-300 group flex flex-col"
+                >
+                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${service.gradient} bg-opacity-10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                    style={{ background: `linear-gradient(135deg, rgba(0,255,136,0.1), rgba(0,255,136,0.05))` }}
+                  >
+                    <IconComponent className="w-8 h-8 text-primary-500" />
+                  </div>
+                  <h3 className="font-mono text-xl font-bold text-neutral-200 mb-4">
+                    {service.title}
+                  </h3>
+                  <p className="text-neutral-400 leading-relaxed text-sm mb-8 flex-grow">
+                    {service.description}
+                  </p>
+                  <Link
+                    to={service.href}
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-primary-500/10 border border-primary-500/30 text-primary-500 font-mono font-semibold rounded-lg hover:bg-primary-500 hover:text-bg-surface transition-all duration-200 group/btn w-fit"
+                  >
+                    <span>Get Started</span>
+                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </Link>
+                </motion.div>
+              );
+            })}
+          </div>
         </div>
       </section>
 

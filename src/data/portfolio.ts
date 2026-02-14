@@ -30,9 +30,12 @@ export const SKILLS = [
   { name: 'Sentry', icon: 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/sentry.svg', category: 'devops', level: 90 },
 
   // Development
+  { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', category: 'development', level: 90 },
+  { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg', category: 'development', level: 90 },
+  { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg', category: 'development', level: 90 },
+  { name: 'Go', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg', category: 'development', level: 90 },
   { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg', category: 'development', level: 90 },
   { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg', category: 'development', level: 90 },
-  { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg', category: 'development', level: 90 },
   { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', category: 'development', level: 90 },
   { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg', category: 'development', level: 90 },
   { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg', category: 'development', level: 90 },
@@ -114,6 +117,7 @@ export const CONTACT = {
   phoneNo: '(+237) 653583000',
   email: 'akumacha@gmail.com',
   newsletter: 'https://theengineeringladder.com',
+  calcom: 'https://cal.com/akum-acha-3yl6cz',
   social: {
     github: 'https://github.com/Akum65358Blaise',
     linkedin: 'https://www.linkedin.com/in/akum-blaise-acha/',

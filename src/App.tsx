@@ -9,6 +9,9 @@ import Blog from './pages/Blog';
 import CaseStudies from './pages/CaseStudies';
 import { Contact } from './pages/Contact';
 import { Newsletter } from './pages/Newsletter';
+import InfrastructureConsulting from './pages/services/InfrastructureConsulting';
+import TransitionIntoDevOps from './pages/services/TransitionIntoDevOps';
+import DevOpsCareerAccelerator from './pages/services/DevOpsCareerAccelerator';
 import './App.css';
 
 function App() {
@@ -26,6 +29,9 @@ function App() {
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/newsletter" element={<Newsletter />} />
+            <Route path="/services/infrastructure" element={<InfrastructureConsulting />} />
+            <Route path="/services/transition-into-devops" element={<TransitionIntoDevOps />} />
+            <Route path="/services/career-accelerator" element={<DevOpsCareerAccelerator />} />
           </Routes>
         </main>
         <Footer />
